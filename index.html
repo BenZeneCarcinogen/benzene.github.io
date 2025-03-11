@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Zene and the Carcinogens</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            background-color: darkred;
+            text-shadow: 2px 2px 0 yellow;
+        }
+        .logo {
+            width: 300px;
+            margin-top: 20px;
+        }
+        .content {
+            margin: 40px;
+        }
+        .gig-list, .music, .contact {
+            margin: 30px;
+            padding: 20px;
+            background-color: darkslategrey;
+            border: 3px solid limegreen;
+            border-radius: 10px;
+        }
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>Ben Zene and the Carcinogens</header>
+    <img src="logo.png" alt="Band Logo" class="logo">
+    
+    <div class="content">
+        <section class="gig-list">
+            <h2>Upcoming Gigs</h2>
+            <p>No upcoming gigs. Check back soon!</p>
+        </section>
+        
+        <section class="music">
+            <h2>Music</h2>
+            <p>Check out our latest release:</p>
+            <audio controls>
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>For bookings and inquiries: <a href="mailto:contact@benzeneandthecarcinogens.com">contact@benzeneandthecarcinogens.com</a></p>
+        </section>
+    </div>
+</body>
+</html>
