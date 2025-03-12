@@ -12,7 +12,7 @@
         }
         @keyframes softGlitch {
             0% { transform: translate(0, 0); }
-            50% { transform: translate(-4px, 4px); }
+            50% { transform: translate(-5px, 5px); }
             100% { transform: translate(0, 0); }
         }
         @keyframes softShake {
@@ -32,6 +32,31 @@
             color: limegreen;
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: black;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: cyan;
+            text-decoration: underline;
         }
         header {
             padding: 20px;
@@ -40,6 +65,7 @@
             background-color: darkred;
             text-shadow: 3px 3px 0 yellow, -3px -3px 0 red;
             animation: subtleFlicker 1.5s infinite alternate, softShake 3s infinite;
+            margin-top: 60px;
         }
         .logo {
             width: 300px;
@@ -49,7 +75,7 @@
         .content {
             margin: 40px;
         }
-        .gig-list, .music, .contact {
+        .gig-list, .music, .contact, .about {
             margin: 30px;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.85);
@@ -72,27 +98,48 @@
     </style>
 </head>
 <body>
-   
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#gigs">Gigs</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.facebook.com/benzeneandthecarcinogens" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/benzeneandthecarcinogens" target="_blank">Instagram</a>
+        <a href="https://benzeneandthecarcinogens.bandcamp.com" target="_blank">Bandcamp</a>
+    </div>
+
+    <header>Ben Zene and the Carcinogens</header>
     <img src="BandLogoBiohazard.png" alt="Band Logo" class="logo">
     
     <div class="content">
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>We are Ben Zene and the Carcinogens – a 1977-style punk band with synths and a love for chaos. Loud, fast, and toxic – just how punk should be.</p>
+        </section>
 
-                <section class="music">
+        <section id="music" class="music">
             <h2>Music</h2>
             <p>Latest Releases:</p>
-<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=76476781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://benzeneandthecarcinogens.bandcamp.com/album/space-rock-for-cretins">Space Rock For Cretins by Ben Zene &amp; the Carcinogens</a></iframe>
-   <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1085826657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://benzeneandthecarcinogens.bandcamp.com/album/filled-by-meth-ep">Filled By Meth EP by Ben Zene &amp; the Carcinogens</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=76476781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+                <a href="https://benzeneandthecarcinogens.bandcamp.com/album/space-rock-for-cretins">Space Rock For Cretins</a>
+            </iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1085826657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+                <a href="https://benzeneandthecarcinogens.bandcamp.com/album/filled-by-meth-ep">Filled By Meth EP</a>
+            </iframe>
         </section>
         
-        <section class="gig-list">
+        <section id="gigs" class="gig-list">
             <h2>Upcoming Gigs</h2>
             <p class="flash-text">6th September 2025 - Degenerate Fest Vol. 4 - Moor Beer, Bristol</p>
         </section>
-    
-        <section class="contact">
+
+        <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>For bookings and enquiries: <a href="mailto:benzeneandthecarcinogens@gmail.com">Send us abuse HERE.</a></p>
+            <p>For bookings and inquiries: <a href="mailto:benzeneandthecarcinogens@gmail.com">Send us abuse HERE.</a></p>
         </section>
     </div>
+
 </body>
 </html>
