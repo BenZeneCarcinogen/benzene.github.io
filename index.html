@@ -60,6 +60,46 @@
     font-size: 1em;
 }
 
+        .label {
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+.label-logo {
+    width: 250px;
+    height: 250px;
+    border: 3px solid limegreen;
+    margin-bottom: 20px;
+}
+.label-bands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.band {
+    text-align: center;
+    width: 200px;
+}
+.band img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid limegreen;
+    transition: transform 0.3s ease-in-out;
+}
+.band img:hover {
+    transform: scale(1.1);
+}
+.band p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+
         .navbar {
             background-color: black;
             padding: 10px;
@@ -212,6 +252,32 @@
             <h2>Upcoming Gigs</h2>
             <p class="flash-text">6th September 2025 - Degenerate Fest Vol. 4 - Moor Beer, Bristol</p>
         </section>
+        <section id="label" class="label">
+    <h2>New, Clear and Poor Records</h2>
+    <img src="new_clear_and_poor_logo.jpg" alt="New, Clear and Poor Records Logo" class="label-logo">
+    <p>New, Clear and Poor Records is an independent punk label, bringing raw, radioactive energy to the underground scene. 
+    We record, mix, and master punk bands with a DIY ethos. Wanna join the fallout? Get in touch.</p>
+    
+    <h3>Current Bands</h3>
+    <div class="label-bands">
+        <div class="band">
+            <img src="benzeneandthecarcinogens.jpg" alt="Ben Zene and the Carcinogens">
+            <p>Ben Zene and the Carcinogens</p>
+        </div>
+        <div class="band">
+            <img src="band_2.jpg" alt="Band 2">
+            <p>Band Name 2</p>
+        </div>
+        <div class="band">
+            <img src="band_3.jpg" alt="Band 3">
+            <p>Band Name 3</p>
+        </div>
+        <!-- Add more bands as needed -->
+    </div>
+
+    <p>For enquiries, demo submissions, and label info, <a href="mailto:newclearandpoorrecords@gmail.com">e-mail us</a>.</p>
+</section>
+
 
         <section id="contact" class="contact">
             <h2>Contact</h2>
