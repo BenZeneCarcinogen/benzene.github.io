@@ -35,6 +35,31 @@
             margin: 0;
             padding: 0;
         }
+        .album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.album {
+    text-align: center;
+    width: 200px; /* Adjust based on preference */
+}
+.album img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid limegreen;
+    transition: transform 0.3s ease-in-out;
+}
+.album img:hover {
+    transform: scale(1.1);
+}
+.album p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
         .navbar {
             background-color: black;
             padding: 10px;
@@ -83,6 +108,7 @@
             border-radius: 10px;
             animation: softGlitch 3s infinite alternate;
         }
+        
         a {
             color: yellow;
             text-decoration: none;
@@ -127,6 +153,7 @@
             <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1085826657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
                 <a href="https://benzeneandthecarcinogens.bandcamp.com/album/filled-by-meth-ep">Filled By Meth EP</a>
             </iframe>
+            
         </section>
         
         <section id="gigs" class="gig-list">
@@ -136,7 +163,7 @@
 
         <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>For bookings and inquiries: <a href="mailto:benzeneandthecarcinogens@gmail.com">Send us abuse HERE.</a></p>
+            <p>For bookings and enquiries: <a href="mailto:benzeneandthecarcinogens@gmail.com">Send us abuse HERE.</a></p>
         </section>
     </div>
 
