@@ -73,7 +73,7 @@
 </head>
 <body>
     <header>Ben Zene and the Carcinogens</header>
-    <img src="logo.png" alt="Band Logo" class="logo">
+    <img src="BandLogo.png" alt="Band Logo" class="logo">
     
     <div class="content">
         <section class="gig-list">
