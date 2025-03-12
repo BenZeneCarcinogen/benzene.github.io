@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Zene and the Carcinogens</title>
+    <style>
+        @keyframes subtleFlicker {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+        @keyframes softGlitch {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(-2px, 2px); }
+            100% { transform: translate(0, 0); }
+        }
+        @keyframes softShake {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(1deg); }
+        }
+        @keyframes colorShift {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: limegreen; }
+            100% { color: cyan; }
+        }
+        body {
+            background: url('hazard_waste_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: limegreen;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            background-color: darkred;
+            text-shadow: 3px 3px 0 yellow, -3px -3px 0 red;
+            animation: subtleFlicker 1.5s infinite alternate, softShake 3s infinite;
+        }
+        .logo {
+            width: 300px;
+            margin-top: 20px;
+            animation: softGlitch 2s infinite alternate;
+        }
+        .content {
+            margin: 40px;
+        }
+        .gig-list, .music, .contact {
+            margin: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 3px solid limegreen;
+            border-radius: 10px;
+            animation: softGlitch 3s infinite alternate;
+        }
+        a {
+            color: yellow;
+            text-decoration: none;
+            animation: colorShift 5s infinite;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .flash-text {
+            font-size: 2em;
+            animation: subtleFlicker 2s infinite alternate, colorShift 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>Ben Zene and the Carcinogens</header>
+    <img src="logo.png" alt="Band Logo" class="logo">
+    
+    <div class="content">
+        <section class="gig-list">
+            <h2>Upcoming Gigs</h2>
+            <p class="flash-text">No upcoming gigs. Check back soon!</p>
+        </section>
+        
+        <section class="music">
+            <h2>Music</h2>
+            <p>Check out our latest release:</p>
+            <audio controls>
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>For bookings and inquiries: <a href="mailto:contact@benzeneandthecarcinogens.com">contact@benzeneandthecarcinogens.com</a></p>
+        </section>
+    </div>
+</body>
+</html>
