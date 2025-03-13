@@ -23,22 +23,42 @@
             width: 100%;
             top: 0;
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 15px 0;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
             box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
             z-index: 1000;
         }
-        .navbar a {
+        
+        /* Logo in Navbar (Left Side) */
+        .navbar .logo {
+            height: 50px;
+        }
+
+        /* Navigation Links (Right Side) */
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
             color: yellow;
             text-decoration: none;
             font-size: 1.2em;
             font-weight: bold;
+            padding: 10px 15px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: inset 0 0 0 2px yellow;
             transition: 0.3s;
         }
-        .navbar a:hover {
-            color: cyan;
-            text-decoration: underline;
+        .nav-links a:hover {
+            background-color: grey;
+            box-shadow: inset 0 0 0 2px limegreen;
+        }
+        .nav-links a:active {
+            background-color: yellow;
+            color: black;
+            box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.8);
         }
 
         /* Sections */
@@ -54,22 +74,6 @@
         }
         h2 {
             color: yellow;
-        }
-
-        /* Logo */
-        .logo {
-            width: 300px;
-            margin-top: 120px;
-            animation: glitch 1.5s infinite alternate;
-        }
-
-        /* Glitch Animation */
-        @keyframes glitch {
-            0% { transform: translate(0, 0); }
-            25% { transform: translate(-3px, 3px); }
-            50% { transform: translate(3px, -3px); }
-            75% { transform: translate(-2px, 2px); }
-            100% { transform: translate(0, 0); }
         }
 
         /* Band List */
@@ -152,17 +156,15 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#bands">Bands</a>
-        <a href="#catalogue">Catalogue</a>
-        <a href="#merchandise">Merchandise</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <!-- Header -->
-    <header>
         <img src="new_clear_and_poor_logo.jpg" alt="Label Logo" class="logo">
-    </header>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#bands">Bands</a>
+            <a href="#catalogue">Catalogue</a>
+            <a href="#merchandise">Merchandise</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about">
