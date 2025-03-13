@@ -25,12 +25,16 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 20px;
+            padding: 10px 30px;
             box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
             z-index: 1000;
         }
         
-        /* Logo in Navbar (Left Side) */
+        /* Logo Inside Navbar (Left Side) */
+        .navbar .logo-container {
+            display: flex;
+            align-items: center;
+        }
         .navbar .logo {
             height: 50px;
         }
@@ -38,7 +42,7 @@
         /* Navigation Links (Right Side) */
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
         .nav-links a {
             color: yellow;
@@ -64,7 +68,7 @@
         /* Sections */
         section {
             padding: 80px 20px;
-            margin-top: 80px;
+            margin-top: 100px;
             background-color: rgba(0, 0, 0, 0.9);
             border: 3px solid limegreen;
             border-radius: 10px;
@@ -156,7 +160,9 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <img src="new_clear_and_poor_logo.jpg" alt="Label Logo" class="logo">
+        <div class="logo-container">
+            <img src="new_clear_and_poor_logo.jpg" alt="Label Logo" class="logo">
+        </div>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#bands">Bands</a>
