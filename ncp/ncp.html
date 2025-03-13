@@ -1,1 +1,218 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Zene and the Carcinogens</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #111;
+            color: limegreen;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navigation Bar */
+        .navbar {
+            background-color: black;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            margin-top: 60px;
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 3px solid limegreen;
+            border-radius: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+        h2 {
+            color: yellow;
+        }
+
+        /* Logo */
+        .logo {
+            width: 250px;
+            margin-top: 100px;
+        }
+
+        /* Music Releases */
+        .album-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .album {
+            text-align: center;
+            width: 200px;
+        }
+        .album img {
+            width: 200px;
+            height: 200px;
+            border: 3px solid limegreen;
+            transition: transform 0.3s ease-in-out;
+        }
+        .album img:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Merchandise */
+        .merch-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .merch-item img {
+            width: 180px;
+            height: 180px;
+            border: 3px solid yellow;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: 2px solid limegreen;
+            background: black;
+            color: limegreen;
+            font-size: 1em;
+        }
+        button {
+            cursor: pointer;
+            background: limegreen;
+            color: black;
+            font-weight: bold;
+        }
+        button:hover {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#gigs">Gigs</a>
+        <a href="#label">Label</a>
+        <a href="#merchandise">Merchandise</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <img src="BandLogoBiohazard.png" alt="Band Logo" class="logo">
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Ben Zene and the Carcinogens</h2>
+        <p>We are a 1977-style punk rock band with synths, bringing raw energy and rebellion back to the scene.</p>
+    </section>
+
+    <!-- Music Releases Section -->
+    <section id="music">
+        <h2>Music</h2>
+        <div class="album-gallery">
+            <div class="album">
+                <img src="album1.jpg" alt="Album 1">
+                <p>Space Rock For Cretins</p>
+            </div>
+            <div class="album">
+                <img src="album2.jpg" alt="Album 2">
+                <p>Filled By Meth EP</p>
+            </div>
+            <!-- Add more albums here -->
+        </div>
+    </section>
+
+    <!-- Gigs Section -->
+    <section id="gigs">
+        <h2>Upcoming Gigs</h2>
+        <p>6th September 2025 - Degenerate Fest Vol. 4 - Moor Beer, Bristol</p>
+    </section>
+
+    <!-- Record Label Section -->
+    <section id="label">
+        <h2>New, Clear and Poor Records</h2>
+        <img src="new_clear_and_poor_logo.jpg" alt="Label Logo" class="logo">
+        <p>An independent punk label with a DIY ethos. Wanna join the fallout?</p>
+        
+        <h3>Current Bands</h3>
+        <div class="album-gallery">
+            <div class="album">
+                <img src="benzene_band.jpg" alt="Ben Zene and the Carcinogens">
+                <p>Ben Zene and the Carcinogens</p>
+            </div>
+            <!-- Add more signed bands -->
+        </div>
+    </section>
+
+    <!-- Merchandise Section -->
+    <section id="merchandise">
+        <h2>Merchandise</h2>
+        <div class="merch-gallery">
+            <div class="merch-item">
+                <img src="shirt1.jpg" alt="Band T-Shirt">
+                <p>Band T-Shirt</p>
+            </div>
+            <div class="merch-item">
+                <img src="patch1.jpg" alt="Punk Patch">
+                <p>Punk Patch</p>
+            </div>
+            <!-- Add more merch items -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
