@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Zene and the Carcinogens</title>
+    <style>
+        @keyframes subtleFlicker {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+        @keyframes softGlitch {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(-5px, 5px); }
+            100% { transform: translate(0, 0); }
+        }
+        @keyframes softShake {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(5deg); }
+        }
+        @keyframes colorShift {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: limegreen; }
+            100% { color: cyan; }
+        }
+        body {
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: limegreen;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.album {
+    text-align: center;
+    width: 200px; /* Adjust based on preference */
+}
+.album img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid limegreen;
+    transition: transform 0.3s ease-in-out;
+}
+.album img:hover {
+    transform: scale(1.1);
+}
+.album p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+        .label {
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+.label-logo {
+    width: 250px;
+    height: 250px;
+    border: 3px solid limegreen;
+    margin-bottom: 20px;
+}
+.label-bands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.band {
+    text-align: center;
+    width: 200px;
+}
+.band img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid limegreen;
+    transition: transform 0.3s ease-in-out;
+}
+.band img:hover {
+    transform: scale(1.1);
+}
+.band p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+
+        .navbar {
+            background-color: black;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: 5s;
+        }
+        .navbar a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+        header {
+            padding: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            background-color: darkred;
+            text-shadow: 3px 3px 0 yellow, -3px -3px 0 red;
+            animation: subtleFlicker 1.5s infinite alternate, softShake 3s infinite;
+            margin-top: 60px;
+        }
+        .logo {
+            width: 300px;
+            margin-top: 20px;
+            animation: softGlitch 2s infinite alternate, softShake 2s infinite;
+        }
+        .content {
+            margin: 40px;
+        }
+        .gig-list, .music, .contact, .about {
+            margin: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 5px solid limegreen;
+            border-radius: 10px;
+            animation: softGlitch 3s infinite alternate;
+        }
+        
+        a {
+            color: yellow;
+            text-decoration: none;
+            animation: colorShift 5s infinite;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .flash-text {
+            font-size: 2em;
+            animation: subtleFlicker 2s infinite alternate, colorShift 3s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#gigs">Gigs</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.facebook.com/benzeneandthecarcinogens" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/benzeneandthecarcinogens" target="_blank">Instagram</a>
+        <a href="https://benzeneandthecarcinogens.bandcamp.com" target="_blank">Bandcamp</a>
+    </div>
+
+    <img src="BandLogoBiohazard.png" alt="Band Logo" class="logo">
+    
+    <div class="content">
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>We are Ben Zene and the Carcinogens – an army of loud, fast and toxic cretins with a love for synths and a penchant for chaos. The musical equivalent of getting a gullet of gob in your ear.</p>
+        </section>
+
+        <section id="music" class="music">
+            <h2>Music</h2>
+            <p>Latest Releases:</p>
+            <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=76476781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+                <a href="https://benzeneandthecarcinogens.bandcamp.com/album/space-rock-for-cretins">Space Rock For Cretins</a>
+            </iframe>
+                <div class="album-gallery">
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/space-junk-for-cretins" target="_blank">
+                <img src="spacejunkforcretins.png" alt="Space Junk For Cretins">
+            </a>
+            <p>Space Junk For Cretins</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/filled-by-meth-ep" target="_blank">
+                <img src="earsore.png" alt="Ear Sore">
+            </a>
+            <p>Ear Sore - Single</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-3" target="_blank">
+                <img src="preciouslife.jpg" alt="(Gonna End Your) Precious Life">
+            </a>
+            <p>(Gonna End Your) Precious Life - Signle</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-4" target="_blank">
+                <img src="middleagealbum.jpg" alt="Middle Age">
+            </a>
+            <p>Middle Age - Single</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-5" target="_blank">
+                <img src="release_5.jpg" alt="Release 5">
+            </a>
+            <p>Release 5</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-6" target="_blank">
+                <img src="release_6.jpg" alt="Release 6">
+            </a>
+            <p>Release 6</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-7" target="_blank">
+                <img src="release_7.jpg" alt="Release 7">
+            </a>
+            <p>Release 7</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-8" target="_blank">
+                <img src="release_8.jpg" alt="Release 8">
+            </a>
+            <p>Release 8</p>
+        </div>
+        <div class="album">
+            <a href="https://benzeneandthecarcinogens.bandcamp.com/album/release-9" target="_blank">
+                <img src="release_9.jpg" alt="Release 9">
+            </a>
+            <p>Release 9</p>
+        </div>
+    </div>
+        </section>
+        
+        <section id="gigs" class="gig-list">
+            <h2>Upcoming Gigs</h2>
+            <p class="flash-text">6th September 2025 - Degenerate Fest Vol. 4 - Moor Beer, Bristol</p>
+        </section>
+        <section id="label" class="label">
+    <h2>New, Clear and Poor Records</h2>
+    <img src="newclearandpoor.png" alt="New, Clear and Poor Records Logo" class="label-logo">
+    <p>New, Clear and Poor Records is an independent punk label, bringing raw, radioactive energy to the underground scene. 
+    We record, mix, and master punk bands with a DIY ethos. Wanna join the fallout? Get in touch...</p>
+    
+    <h3>Current Bands</h3>
+    <div class="label-bands">
+        <div class="band">
+            <img src="benzeneandthecarcinogens.jpg" alt="Ben Zene and the Carcinogens">
+            <p>Ben Zene and the Carcinogens</p>
+        </div>
+        <div class="band">
+            <img src="band_2.jpg" alt="Band 2">
+            <p>Band Name 2</p>
+        </div>
+        <div class="band">
+            <img src="band_3.jpg" alt="Band 3">
+            <p>Band Name 3</p>
+        </div>
+        <!-- Add more bands as needed -->
+    </div>
+
+    <p>For enquiries, demo submissions, and label info, <a href="mailto:newclearandpoorrecords@gmail.com">e-mail us</a>.</p>
+</section>
+
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>For bookings and enquiries: <a href="mailto:benzeneandthecarcinogens@gmail.com">Send us abuse HERE.</a></p>
+        </section>
+    </div>
+
+</body>
+</html>
