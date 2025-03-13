@@ -8,7 +8,7 @@
     <style>
         /* Global Styles */
         body {
-            background: url('recordingstudioncp.png') no-repeat center center fixed;
+            background: url('hazard_waste_bg.jpg') no-repeat center center fixed;
             background-size: cover;
             color: limegreen;
             font-family: 'Orbitron', sans-serif;
@@ -24,23 +24,26 @@
             width: 100%;
             top: 0;
             display: flex;
-            align-items: center;
+            align-items: flex-end; /* Aligns items to the bottom */
             justify-content: flex-start;
             padding: 10px 30px;
             box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
             z-index: 1000;
+            height: 120px; /* Adjust navbar height */
         }
         
         /* Logo Inside Navbar (Left Side) */
         .navbar .logo {
             height: 200px; /* Increased 5x */
             margin-right: 20px;
+            align-self: center; /* Keeps the logo centered in the navbar */
         }
 
-        /* Navigation Links */
+        /* Navigation Links (Bottom Left) */
         .nav-links {
             display: flex;
             gap: 15px;
+            align-self: flex-end; /* Forces the links to align to the bottom */
         }
         .nav-links a {
             color: yellow;
@@ -66,7 +69,7 @@
         /* Sections with Transparent Background */
         section {
             padding: 60px 20px;
-            margin-top: 120px;
+            margin-top: 180px; /* Added more margin to push content below navbar */
             background-color: rgba(0, 0, 0, 0.7); /* Reduced opacity for transparency */
             border: 3px solid limegreen;
             border-radius: 10px;
